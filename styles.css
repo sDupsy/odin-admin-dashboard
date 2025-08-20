@@ -81,19 +81,32 @@ html, body {
     color: var(--text-primary);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 
 
-.top {
+.header-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
 }
 
-.bottom {
+.header-bottom {
     display:flex;
     justify-content: space-around;
     align-items: center;
 }
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.sidebar-top, .sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
